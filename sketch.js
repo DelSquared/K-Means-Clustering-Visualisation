@@ -105,7 +105,3 @@ function draw() {
 }
 
 d = (dot1,dot2) => ((dot1.x-dot2.x)*(dot1.x-dot2.x) + (dot1.y-dot2.y)*(dot1.y-dot2.y));
-
-
-//d(Tg-T)/dt = -(Tg-T)
-//D = (1 - 1/FR) + sq(3T/m)/FR*c
