@@ -72,6 +72,9 @@ function setup() {
   noFill();
   strokeWeight(3);
   frameRate(50);
+  strength = createSlider(0, 100, 20);
+  strength.position(10, w+10);
+  createP('Slider adjusts perturbation strength').position(10, w+20);
 }
 
 function draw() {
@@ -97,8 +100,8 @@ function draw() {
         }
 
       }
-      if (frameCount%50==0 && frameCount<850){
-        cent[i].perturbCentroid(30);
+      if (frameCount%50==0 && frameCount<1000){
+        cent[i].perturbCentroid(strength.value());
       }
     }
   }
