@@ -98,7 +98,7 @@ function draw() {
 
       }
       if (frameCount%50==0 && frameCount<850){
-        cent[i].perturbCentroid(20);
+        cent[i].perturbCentroid(30);
       }
     }
   }
