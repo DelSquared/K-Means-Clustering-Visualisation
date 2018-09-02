@@ -73,8 +73,8 @@ function setup() {
   strokeWeight(3);
   frameRate(50);
   strength = createSlider(0, 100, 20);
-  strength.position(10, w+10);
-  createP('Slider adjusts perturbation strength').position(10, w+20);
+  strength.position(10, w+20);
+  createP('Slider adjusts perturbation strength').position(10, w+30);
 }
 
 function draw() {
