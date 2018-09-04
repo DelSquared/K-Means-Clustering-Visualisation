@@ -40,7 +40,7 @@ function dot (r,g,b){
 }
 
 function preload(){ //preloading the image in p5.js context
-  img = loadImage("flowers.JPG");
+  img = loadImage("kalimba.JPG");
 }
 
 function setup() { //setting up canvas for p5.js to work on
