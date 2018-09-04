@@ -1,5 +1,4 @@
 var w = 500;
-//var n = 1000;
 var pts = [];
 var k = 10;
 var cent = [];
