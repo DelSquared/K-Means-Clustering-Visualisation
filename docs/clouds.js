@@ -1,5 +1,5 @@
 var pts = [];
-var k = 8;
+var k = 6;
 var cent = [];
 var img; //placeholder variable to store map in
 
