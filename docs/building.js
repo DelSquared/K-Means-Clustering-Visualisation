@@ -44,8 +44,8 @@ function preload(){ //preloading the image in p5.js context
 }
 
 function setup() { //setting up canvas for p5.js to work on
-  createCanvas(img.width, img.height); //canvas dimensions
-  image(img,0,0,img.width, img.height);
+  createCanvas(img.width/2, img.height/2); //canvas dimensions
+  image(img,0,0,img.width/2, img.height/2);
   var d = pixelDensity();
   loadPixels();
   for (var i = 0; i < 4*(width*d)*(height*d); i+=4){
@@ -56,8 +56,8 @@ function setup() { //setting up canvas for p5.js to work on
     cent[i].centIndex=i;
   }
   strength = createSlider(0, 100, 0);
-  strength.position(10, img.height+5);
-  createP('Slider adjusts perturbation strength of '+k+" centroids").position(10, img.height+10);
+  strength.position(10, img.height/2+5);
+  createP('Slider adjusts perturbation strength of '+k+" centroids").position(10, img.height/2+10);
   updatePixels();
   background(0);
 }
